@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="drawingview" name="graphicsView"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>410</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionImport_image"/>
+    <addaction name="actionClear_image"/>
+    <addaction name="actionExport_image"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionResize"/>
+    <addaction name="actionObject_removal"/>
+    <addaction name="actionRemove"/>
+    <addaction name="actionCancel"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionProject"/>
+    <addaction name="actionAuthors"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuAbout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionImport_image"/>
+   <addaction name="actionClear_image"/>
+   <addaction name="actionExport_image"/>
+   <addaction name="separator"/>
+   <addaction name="actionResize"/>
+   <addaction name="actionObject_removal"/>
+   <addaction name="actionRemove"/>
+   <addaction name="actionCancel"/>
+   <addaction name="separator"/>
+   <addaction name="actionProject"/>
+   <addaction name="actionAuthors"/>
+  </widget>
+  <action name="actionProject">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/about_project.png</normaloff>:/rsc/img/about_project.png</iconset>
+   </property>
+   <property name="text">
+    <string>Project</string>
+   </property>
+  </action>
+  <action name="actionAuthors">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/about_creators.png</normaloff>:/rsc/img/about_creators.png</iconset>
+   </property>
+   <property name="text">
+    <string>Authors</string>
+   </property>
+  </action>
+  <action name="actionImport_image">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/import_file.png</normaloff>:/rsc/img/import_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Import image</string>
+   </property>
+  </action>
+  <action name="actionClear_image">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/clear.png</normaloff>:/rsc/img/clear.png</iconset>
+   </property>
+   <property name="text">
+    <string>Clear image</string>
+   </property>
+  </action>
+  <action name="actionResize">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/resize.png</normaloff>:/rsc/img/resize.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resize</string>
+   </property>
+  </action>
+  <action name="actionObject_removal">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/highlighter.png</normaloff>:/rsc/img/highlighter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Marker</string>
+   </property>
+  </action>
+  <action name="actionExport_image">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/export_file.png</normaloff>:/rsc/img/export_file.png</iconset>
+   </property>
+   <property name="text">
+    <string>Export image</string>
+   </property>
+  </action>
+  <action name="actionRemove">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/object_removal.png</normaloff>:/rsc/img/object_removal.png</iconset>
+   </property>
+   <property name="text">
+    <string>Remove</string>
+   </property>
+  </action>
+  <action name="actionCancel">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/rsc/img/cancel_drawing.png</normaloff>:/rsc/img/cancel_drawing.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>drawingview</class>
+   <extends>QGraphicsView</extends>
+   <header>drawingview.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

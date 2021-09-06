@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/rsc">
+        <file>img/about_creators.png</file>
+        <file>img/about_project.png</file>
+        <file>img/clear.png</file>
+        <file>img/export_file.png</file>
+        <file>img/import_file.png</file>
+        <file>img/object_removal.png</file>
+        <file>img/resize.png</file>
+		<file>img/highlighter.png</file>
+		<file>img/cancel_drawing.png</file>
+    </qresource>
+</RCC>
